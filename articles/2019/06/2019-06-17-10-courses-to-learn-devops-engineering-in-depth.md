@@ -31,7 +31,7 @@ DevOps 现在真的很热门，对于杰出的工程师和 DevOps 专业人员�
 如果你想成为一名 DevOps 工程师，那么你来对地方了。在本文中，我将分享一下最好的在线培训课程，
 让你成为 DevOps 专业人员。
 
-Devops 最重要的优势,它可以帮助你更好地发布软件并且利用现代自动化工具对环境和软件开发过程中提供更多控制。这就是 DevOps 专业人员需求呈指数增长的原因。除了[Data Science](http://javarevisited.blogspot.sg/2018/02/top-10-highest-paying-technical-jobs-programmers-software-developers.html#axzz58Gi5STbU) 和 [Machine Learning](https://javarevisited.blogspot.com/2018/08/top-5-tensorflow-and-machine-learning-courses-online-programmers.html) 外，它也是薪酬最高的 IT 工作之一。
+Devops 最重要的优势,它可以帮助你更好地发布软件并且利用现代自动化工具对环境和软件开发过程中提供更多控制。这就是 DevOps 专业人员需求呈指数增长的原因。除了 [Data Science](http://javarevisited.blogspot.sg/2018/02/top-10-highest-paying-technical-jobs-programmers-software-developers.html#axzz58Gi5STbU) 和 [Machine Learning](https://javarevisited.blogspot.com/2018/08/top-5-tensorflow-and-machine-learning-courses-online-programmers.html) 外，它也是薪酬最高的 IT 工作之一。
 
 根据 Glassdoor 的数据，[DevOps](https://hackernoon.com/the-2018-devops-roadmap-31588d8670cb) 的工程师每年的收入从105000美元到146000美元不等。这意味着，如果你正在寻找加薪或想在美好年纪从事一些令人兴奋的工作赚更多的钱，学习 DevOps 可能是一个不错的选择。
 
@@ -39,7 +39,7 @@ Devops 最重要的优势,它可以帮助你更好地发布软件并且利用现
 
 公司希望新的开发人员能够管理 Web 应用程序的整个生命周期。这意味着开发和部署应用程序。
 
-为了成为一名有效的 DevOps 工程师，您必须扩展对软件开发中使用的不同工具的知识，包括构建工具（如 [Maven](https://www.java67.com/2018/02/6-free-maven-and-jenkins-online-courses-for-java-developers.html)、 [Ant](http://javarevisited.blogspot.sg/2015/01/difference-between-maven-ant-jenkins-and-hudson.html)和 Gradle ）、单元测试工具（如 [Junit](https://www.java67.com/2018/02/5-free-eclipse-and-junit-online-courses-java-developers.html) 和 [Selenium](https://www.java67.com/2018/02/7-free-selenium-web-deriver-courses-for-java-C-developer.html) ）、部署工具（如 Docker ）、监控工具（如 New Relic ）、基础设施自动化工具（如 Chef 和 Puppet ）、源代码。控制工具，如 [Git](https://javarevisited.blogspot.com/2018/01/5-free-git-courses-for-programmers-to-learn-online.html) 和 Github，以及持续集成工具，如 Jenkins和 TeamCity。这些课程为基本的 DevOps 工具提供了很好的介绍。
+为了成为一名有效的 DevOps 工程师，您必须扩展对软件开发中使用的不同工具的知识，包括构建工具（如 [Maven](https://www.java67.com/2018/02/6-free-maven-and-jenkins-online-courses-for-java-developers.html)、 [Ant](http://javarevisited.blogspot.sg/2015/01/difference-between-maven-ant-jenkins-and-hudson.html) 和 Gradle ）、单元测试工具（如 [Junit](https://www.java67.com/2018/02/5-free-eclipse-and-junit-online-courses-java-developers.html) 和 [Selenium](https://www.java67.com/2018/02/7-free-selenium-web-deriver-courses-for-java-C-developer.html) ）、部署工具（如 Docker ）、监控工具（如 New Relic ）、基础设施自动化工具（如 Chef 和 Puppet ）、源代码。控制工具，如 [Git](https://javarevisited.blogspot.com/2018/01/5-free-git-courses-for-programmers-to-learn-online.html) 和 Github，以及持续集成工具，如 Jenkins和 TeamCity。这些课程为基本的 DevOps 工具提供了很好的介绍。
 
 ## 十节面向经验丰富的开发人员  DevOps 课程
 在不浪费更多时间的情况下，这里列出了一些学习 DevOps 的最佳课程以及在软件开发和部署过程中实现自动化所需的基本工具。
@@ -88,7 +88,7 @@ Terraform 开始于相同的规则、基础设施即代码，但更专注于基�
 
 在[本课程](https://www.udemy.com/ci-and-cd-with-aws-codepipeline-jenkins-and-aws-codedeploy/?ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-_y83ur6t5OYigUAG1MsTdQ&LSNPUBID=JVFxdTr9V80)中，您将学习必要的DevOps技能，以及在AWS云中的持续集成和持续交付。
 
-## 9.DevOps：用J enkins pipelines, Maven, Gradle 进行 CI/CD
+## 9.DevOps：用 Jenkins pipelines, Maven, Gradle 进行 CI/CD
 [本在线 DevOps 课程](https://www.udemy.com/devops-and-continuous-integration-with-jenkins-pipelines/?ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-tD0ehOmkKnazINRFkKfwsg&LSNPUBID=JVFxdTr9V80)将教您如何使用 Jenkins 及它的一些插件（尤其是流水线插件），来构建复杂的持续集成和持续交付流水线。
 
 [本课程](https://www.udemy.com/devops-and-continuous-integration-with-jenkins-pipelines/?ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-d8jeAYHvfzxAMKitxPqMsg&LSNPUBID=JVFxdTr9V80)旨在向您传授 Jenkins 的经验，并建立 DevOps 流水线，即使您几乎没有经验，也可以帮助您实现这些 DevOps 实践，从而简化您的开发过程。
