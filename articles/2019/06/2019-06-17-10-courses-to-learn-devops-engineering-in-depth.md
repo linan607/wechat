@@ -1,7 +1,7 @@
 ---
 title: "10节课带你深入学习 DevOps 工程"
 description: "对那些想要涉足DevOps领域的工程师来说，这些多样的课程提供了一个很好的开始。"
-date: 2019-06-11
+date: 2019-06-17
 tags:
 - devops
 - jenkins
@@ -31,11 +31,11 @@ DevOps 现在真的很热门，对于杰出的工程师和 DevOps 专业人员�
 如果你想成为一名 DevOps 工程师，那么你来对地方了。在本文中，我将分享一下最好的在线培训课程，
 让你成为 DevOps 专业人员。
 
-Devops 最重要的优势,它可以帮助你更好地发布软件并且利用现代自动化工具对环境和软件开发过程中提供更多控制。这就是 DevOps 专业人员需求呈指数增长的原因。除了[data science](http://javarevisited.blogspot.sg/2018/02/top-10-highest-paying-technical-jobs-programmers-software-developers.html#axzz58Gi5STbU) 和 [machine learning](https://javarevisited.blogspot.com/2018/08/top-5-tensorflow-and-machine-learning-courses-online-programmers.html) 外，它也是薪酬最高的 IT 工作之一。
+Devops 最重要的优势,它可以帮助你更好地发布软件并且利用现代自动化工具对环境和软件开发过程中提供更多控制。这就是 DevOps 专业人员需求呈指数增长的原因。除了[Data Science](http://javarevisited.blogspot.sg/2018/02/top-10-highest-paying-technical-jobs-programmers-software-developers.html#axzz58Gi5STbU) 和 [Machine Learning](https://javarevisited.blogspot.com/2018/08/top-5-tensorflow-and-machine-learning-courses-online-programmers.html) 外，它也是薪酬最高的 IT 工作之一。
 
-根据 Glassdoor 的数据，[DevOps](https://hackernoon.com/the-2018-devops-roadmap-31588d8670cb)的工程师每年的收入从105000美元到146000美元不等。这意味着，如果你正在寻找加薪或想在美好年纪从事一些令人兴奋的工作赚更多的钱，学习 DevOps 可能是一个不错的选择。
+根据 Glassdoor 的数据，[DevOps](https://hackernoon.com/the-2018-devops-roadmap-31588d8670cb) 的工程师每年的收入从105000美元到146000美元不等。这意味着，如果你正在寻找加薪或想在美好年纪从事一些令人兴奋的工作赚更多的钱，学习 DevOps 可能是一个不错的选择。
 
-学习像 [Jenkins](https://www.java67.com/2018/02/6-free-maven-and-jenkins-online-courses-for-java-developers.html)这样的持续集成工具和像 [Docker](https://javarevisited.blogspot.com/2018/02/10-free-docker-container-courses-for-Java-Developers.html) 这样的容器以及一般的 DevOps 技能，在技术领域获得了巨大的动力。这与几年前的移动应用程序开发类似。
+学习像 [Jenkins](https://www.java67.com/2018/02/6-free-maven-and-jenkins-online-courses-for-java-developers.html) 这样的持续集成工具和像 [Docker](https://javarevisited.blogspot.com/2018/02/10-free-docker-container-courses-for-Java-Developers.html) 这样的容器以及一般的 DevOps 技能，在技术领域获得了巨大的动力。这与几年前的移动应用程序开发类似。
 
 公司希望新的开发人员能够管理 Web 应用程序的整个生命周期。这意味着开发和部署应用程序。
 
