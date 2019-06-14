@@ -92,10 +92,10 @@ Terraform 开始于相同的规则、基础设施即代码，但更专注于基�
 ## 10.用 Docker, Jenkins, GIT, Vagrant, 和 Maven 完成 DevOps
 如果您正在寻找一个[实践 DevOps 课程](https://www.udemy.com/devops-docker-complete-guide-hands-on-with-practical/?ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-QVJ8sSlgM_3DhMKRdfIC9Q&LSNPUBID=JVFxdTr9V80)，它不仅可以向您解释 DevOps 工程师的角色，而且可以提供关于基本 DevOps 工具的实践经验，那么这是您的课程。
 
-它提供了一个关于 DevOps 基本技术的完整教程。您将通过实践指导学习 Docker Mastery、Jenkins、Git、Vagrant 和Maven。
+它提供了一个关于 DevOps 基本技术的完整教程。您将通过实践指导学习 Docker Mastery、Jenkins、Git、Vagrant 和 Maven。
 
 正如我所说，对优秀的 DevOps 工程师和软件开发人员的需求呈指数级增长，市场上没有足够的 DevOps 专业人员来支持这一需求。
 
-这意味着这是一个学习 DevOps 并进入这个更负责任、高薪和令人兴奋的领域的绝佳机会。如果你打算在2019年成为一名DevOps 工程师，那么这些课程是一个很好的起点。
+这意味着这是一个学习 DevOps 并进入这个更负责任、高薪和令人兴奋的领域的绝佳机会。如果你打算在2019年成为一名 DevOps 工程师，那么这些课程是一个很好的起点。
 
 如果你喜欢这些 DevOps 课程，请与你的朋友和同事分享。如果您有任何问题或反馈，请留言。
