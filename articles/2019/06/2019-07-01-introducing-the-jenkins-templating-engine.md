@@ -20,7 +20,7 @@ poster: "./2019-06-27-introducing-the-jenkins-templating-engine/JTE.jpg"
 
 在企业范围内实施 DevSecOps 实践具有挑战性。由于组织内的不同应用程序正在使用多种编程语言、自动化测试框架和安全遵从性安全合规性工具，因此每个团队构建和维护流水线变得很难。
 
-无论应用程序使用哪个特定的技术堆栈，大多数流水线都将遵循相同的通用工作流。[模板引擎插件](https://plugins.jenkins.io/templating-engine)（简写为 JTE ，用于 Jenkins 模板引擎）允许您通过创建不依赖于工具的模板化工作流来获取效率，每个团队都可以重用这些工作流。。
+无论应用程序使用哪个特定的技术堆栈，大多数流水线都将遵循相同的通用工作流。[模板引擎插件](https://plugins.jenkins.io/templating-engine)（简写为 JTE ，用于 Jenkins 模板引擎）允许您通过创建不依赖于工具的模板化工作流来获取效率，每个团队都可以重用这些工作流。
 
 作为公共部门和私营部门客户的技术顾问，我们在 Booz Allen 发现，每个新项目都要从头开始建造 DevSecOps 流水线。通过开发 Jenkins 模板引擎，我们已经看到流水线开发从几个月减少到几天，现在我们可以重用工具集成，同时为 Jenkins 流水线带来新的管理级别。
 
@@ -228,24 +228,6 @@ sonarqube: static_code_analysis()
 * [默认步骤实现](https://boozallen.github.io/jenkins-templating-engine/pages/Templating/configuration_files/default_step_implementation.html)
 * [配置文件 DSL 沙盒](https://boozallen.github.io/jenkins-templating-engine/pages/Templating/configuration_files/sandboxing.html)
 
-## 更多资源
-
-### 对于这个演示
-* [Pipeline 配置存储库](https://github.com/steven-terrana/example-jte-configuration)
-* [示例库](https://github.com/steven-terrana/example-jte-libraries)
-* [Maven 存储库示例](https://github.com/steven-terrana/example-jte-app-maven)
-* [Gradle 存储库示例](https://github.com/steven-terrana/example-jte-app-gradle)
-
-### 其他资源
-* [模板引擎文档](https://boozallen.github.io/jenkins-templating-engine/)
-* [源代码](https://github.com/jenkinsci/templating-engine-plugin)
-* [Booz Allen 的 SDP 流水线库](https://github.com/boozallen/sdp-libraries)
-* [博思艾伦咨询公司](https://boozallen.com/)
-
-### 关于作者
-* [Steven Terrana](https://jenkins.io/blog/authors/steven-terrana/)
-* 这位作者没有定义传记。请参阅下面引用的社交媒体链接。
-* [GitHub](https://github.com/steven-terrana)
 
 
 
