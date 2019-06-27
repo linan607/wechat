@@ -228,6 +228,20 @@ sonarqube: static_code_analysis()
 * [默认步骤实现](https://boozallen.github.io/jenkins-templating-engine/pages/Templating/configuration_files/default_step_implementation.html)
 * [配置文件 DSL 沙盒](https://boozallen.github.io/jenkins-templating-engine/pages/Templating/configuration_files/sandboxing.html)
 
+## 更多资源
+
+### 对于这个演示
+* [Pipeline 配置存储库](https://github.com/steven-terrana/example-jte-configuration)
+* [示例库](https://github.com/steven-terrana/example-jte-libraries)
+* [Maven 存储库示例](https://github.com/steven-terrana/example-jte-app-maven)
+* [Gradle 存储库示例](https://github.com/steven-terrana/example-jte-app-gradle)
+
+### 其他资源
+* [模板引擎文档](https://boozallen.github.io/jenkins-templating-engine/)
+* [源代码](https://github.com/jenkinsci/templating-engine-plugin)
+* [Booz Allen 的 SDP 流水线库](https://github.com/boozallen/sdp-libraries)
+* [博思艾伦咨询公司](https://boozallen.com/)
+
 
 
 
