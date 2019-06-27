@@ -1,11 +1,14 @@
 ---
 title: "介绍 Jenkins 模板引擎"
-description: "这是 StevenTerrana 的客座帖子，他是 Booz Allen Hamilton 的首席技术专家，也是模板引擎插件的首席工程师。他参加了管道创作特别兴趣小组"
+description: "这是 StevenTerrana 的客座帖子，他是 Booz Allen Hamilton 的首席技术专家，也是模板引擎插件的首席工程师。他参加了流水线设计特别兴趣小组"
 date: 2019-07-01
 tags:
 - JTE
+- pipeline
+- plugin
+- pipeline-authoring
 keywords:
-- JTE
+- 模板引擎
 author:   Steven Terrana
 original: https://jenkins.io/blog/2019/05/09/templating-engine/
 translator: linan607
@@ -15,11 +18,11 @@ poster: "./2019-06-27-introducing-the-jenkins-templating-engine/JTE.jpg"
 
 ![JTE](JTE.jpg)
 
-在企业范围内实施 Devsecops 实践具有挑战性。由于组织内的不同应用程序正在使用多种编程语言、自动化测试框架和安全遵从性安全合规性工具，因此每个团队构建和维护流水线变得很难。
+在企业范围内实施 DevSecOps 实践具有挑战性。由于组织内的不同应用程序正在使用多种编程语言、自动化测试框架和安全遵从性安全合规性工具，因此每个团队构建和维护流水线变得很难。
 
-无论应用程序使用哪个特定的技术堆栈，大多数流水线都将遵循相同的通用工作流。[模板化引擎插件](https://plugins.jenkins.io/templating-engine)（简写为 JTE ，用于 Jenkins 模板化引擎）允许您通过创建不依赖于工具的模板化工作流来获取效率，每个团队都可以重用这些工作流。。
+无论应用程序使用哪个特定的技术堆栈，大多数流水线都将遵循相同的通用工作流。[模板引擎插件](https://plugins.jenkins.io/templating-engine)（简写为 JTE ，用于 Jenkins 模板引擎）允许您通过创建不依赖于工具的模板化工作流来获取效率，每个团队都可以重用这些工作流。。
 
-作为公共部门和私营部门客户的技术顾问，我们在 Booz Allen 发现，每个新项目都要从头开始建造 Devsecops 流水线。通过开发 Jenkins 模板引擎，我们已经看到流水线开发从几个月减少到几天，现在我们可以重用工具集成，同时为 Jenkins 流水线带来新的管理级别。
+作为公共部门和私营部门客户的技术顾问，我们在 Booz Allen 发现，每个新项目都要从头开始建造 DevSecOps 流水线。通过开发 Jenkins 模板引擎，我们已经看到流水线开发从几个月减少到几天，现在我们可以重用工具集成，同时为 Jenkins 流水线带来新的管理级别。
 
 ## Pipeline 实施 
 组织受益于让应用程序开发人员专注于他们最擅长的工作：构建应用程序。支持这个，意味着建立一个集中式的 DevOps 团队，负责维护平台基础设施，并创建开发团队使用的 CI/CD 流水线。
@@ -29,7 +32,6 @@ poster: "./2019-06-27-introducing-the-jenkins-templating-engine/JTE.jpg"
 虽然开发团队之间的工具可能不同，但工作流通常是相同的：单元测试、静态代码分析、构建和发布工件、部署工件，然后针对部署的应用程序执行不同类型的测试。
 
  > 模板引擎插件允许您从每个被团队定义可继承通用工作流的存储库中删除 Jenkinsfile 。作为替代每个存储库需定义整个流水线，团队提供一个使用工作流的工具配置文件。
-
 
 ## 执行 JTE
 让我们通过一个简单的示例来演示模板的可重用性：
@@ -51,7 +53,7 @@ poster: "./2019-06-27-introducing-the-jenkins-templating-engine/JTE.jpg"
 2.	**库**：提供工作流步骤的技术实现
 3.	**配置文件**：指定要使用的库及其配置
 
-### 1、创建流水线配置存储库
+### 步骤1、创建流水线配置存储库
 流水线配置存储库用于存储团队继承的常见配置和流水线模板。
 
 这个[示例流水线配置存储库](https://github.com/steven-terrana/example-jte-configuration)稍后将被配置为[管理层](https://boozallen.github.io/jenkins-templating-engine/pages/Governance/index.html#governance-tier)的一部分：JTE 的机制中允许您构建表示组织的层次结构配置。
@@ -65,7 +67,7 @@ poster: "./2019-06-27-introducing-the-jenkins-templating-engine/JTE.jpg"
 
 在 Jenkins 中配置治理层时，您将为包含上述组件的存储库以及可以找到这些构件的基本目录提供源代码管理位置。
 
-### 2、创建流水线模板
+### 步骤2、创建流水线模板
 接下来，我们将为治理层创建一个 `Jenkinsfile` 。在 JTE 中， `Jenkinsfile` 是执行将使用的默认流水线模板。
 
 ```
@@ -75,14 +77,14 @@ build()
 static_code_analysis()
 ```
 
-### 3、 创建库
+### 步骤3、 创建库
 模板引擎插件实现了一个版本的 Jenkins 共享库，以增强库的可重用性。库是源代码存储库中的根目录，并且该存储库已在管理层上配置为库源。
 
 在我们的示例中，流水线模板需要执行单元测试、打包工件和运行静态代码分析。
 
-假设我们有一些团队使用 **Gradle** ，一些团队使用 **Maven** 来构建和测试他们的应用程序，但是他们都将使用 Sonarkube 来执行静态代码分析。
+假设我们有一些团队使用 **Gradle** ，一些团队使用 **Maven** 来构建和测试他们的应用程序，但是他们都将使用 Sonarqube 来执行静态代码分析。
 
-在这个场景中，我们应该创建 `gradle` 、 `maven` 和 `sonarkube` 库。
+在这个场景中，我们应该创建 `gradle` 、 `maven` 和 `sonarqube` 库。
 
 ```
 |- gradle/
@@ -95,7 +97,7 @@ static_code_analysis()
   \-- static_code_analysis.groovy
 ```
 
-### 4、实施步骤
+### 步骤4、实施步骤
 实现库步骤与将常规全局变量作为默认 Jenkins 共享库的一部分写入完全相同。
 
 为了这个演示的目的，我们将让每个步骤打印出步骤名称和贡献库。
@@ -109,7 +111,7 @@ void call(){
 
  > 读更多关于 [JTE 开发库](https://boozallen.github.io/jenkins-templating-engine/pages/Library_Development/index.html)。
 
-### 5、创建配置文件
+### 步骤5、创建配置文件
 Jte 的配置文件名为 `pipeline_config.groovy` 。
 
 在管理层，我们将建立一个配置文件，具体说明应用程序之间的共同配置。在此情况下，两种应用都是使用 `sonarqube`  库。
@@ -140,23 +142,23 @@ libraries{
 }
 ```
 
-### 6、在 Jenkins 中配置治理层
+### 步骤6、在 Jenkins 中配置治理层
 既然我们有了[流水线配置存储库](https://github.com/steven-terrana/example-jte-configuration)和[库源存储库](https://github.com/steven-terrana/example-jte-libraries)，那么就可以在 Jenkins 中配置[治理层](https://boozallen.github.io/jenkins-templating-engine/pages/Governance/index.html#governance-tier)：
 
 ![governance_tier](governance_tier.png)
 
  > 上图中显示的配置可以在以下找到 `Manage Jenkins >> Configure System` 。
 
- > 通过模板化引擎，您可以通过 Jenkins 中的文件夹表示此结构，从而创建与组织分类相匹配的流水线治理层次结构。
+ > 通过模板引擎，您可以通过 Jenkins 中的文件夹表示此结构，从而创建与组织分类相匹配的流水线治理层次结构。
 
-### 7、为两个应用程序创建多分支流水线
+### 步骤7、为两个应用程序创建多分支流水线
 当为每个应用程序创建多分支流水线项目时，模板引擎插件提供一个名为 **Jenkins 模板引擎**的新 `Project Recognizer` 。项目设置为在存储库中的所有分支使用模板引擎框架。。
 
 ![project_recognizer](project_recognizer.png)
 
  > 您还可以为 GitHub 组织项目设置 **Jenkins 模板引擎**项目识别器，使您能够轻松地在整个 GitHub 组织中共享相同的流水线！
 
-### 8、运行流水线
+### 步骤8、运行流水线
 就这样！现在，这两个应用程序将利用完全相同的流水线模板，同时具有选择工作流每个阶段应使用哪些工具的灵活性。
 
 下面是两个应用程序运行流水线的控制台日志的示例输出：
@@ -201,17 +203,17 @@ sonarqube: static_code_analysis()
 [Pipeline] End of Pipeline
 ```
 
-## 模板化引擎的好处
+## 模板引擎的好处
 ![jte_benefits](jte_benefits.png)
 
 ## 应用组织治理
-利用模板化引擎插件，您可以定义企业级的、经过批准的工作流，无论使用什么工具，团队都可以使用这些工作流。这种自上而下的方法使得在组织中扩展和执行 Devsecops 原则变得非常容易。
+利用模板引擎插件，您可以定义企业级的、经过批准的工作流，无论使用什么工具，团队都可以使用这些工作流。这种自上而下的方法使得在组织中扩展和执行 DevSecOps 原则变得非常容易。
 
 ## 优化代码重用
-实际上，组织中的每个团队都不需要反复思考如何做相同的事情。在 Booz Allen ，我们已经看到流水线开发时间从几个月减少到几天，因为我们不断地重复使用和扩展模板化引擎库组合，作为解决方案交付平台的一部分。
+实际上，组织中的每个团队都不需要反复思考如何做相同的事情。在 Booz Allen ，我们已经看到流水线开发时间从几个月减少到几天，因为我们不断地重复使用和扩展模板引擎库组合，作为解决方案交付平台的一部分。
 
 ## 简化流水线可维护性
-通常，DevOps 工程师会发现自己同时为多个开发团队构建和支持流水线。通过将工作流与技术实现分离，并将流水线定义合并到一个集中的位置，模板化引擎插件允许 DevOps 工程师更快地扩展。
+通常，DevOps 工程师会发现自己同时为多个开发团队构建和支持流水线。通过将工作流与技术实现分离，并将流水线定义合并到一个集中的位置，模板引擎插件允许 DevOps 工程师更快地扩展。
 
 ## 参与进来！
 [模板引擎插件](https://plugins.jenkins.io/templating-engine)是开源的，并在 Jenkins 更新中心提供。
@@ -235,7 +237,7 @@ sonarqube: static_code_analysis()
 * [Gradle 存储库示例](https://github.com/steven-terrana/example-jte-app-gradle)
 
 ### 其他资源
-* [模板化引擎文档](https://boozallen.github.io/jenkins-templating-engine/)
+* [模板引擎文档](https://boozallen.github.io/jenkins-templating-engine/)
 * [源代码](https://github.com/jenkinsci/templating-engine-plugin)
 * [Booz Allen 的 SDP 流水线库](https://github.com/boozallen/sdp-libraries)
 * [博思艾伦咨询公司](https://boozallen.com/)
