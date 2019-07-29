@@ -55,7 +55,7 @@ poster: "./2019-07-30-jenkins-meetup/shou.png"
 ## 现场更有好礼相送
 * 平安云赞助的保温杯
 
-![保温杯](gift-1.jpg)
+![保温杯](bei.jpg)
 
 * Jenkins 中文社区定制的笔、本以及贴纸
 
