@@ -3,7 +3,7 @@ title: "持续交付黑客松--导师招募"
 description: "持续交付黑客松导师招募"
 author: linan607
 toc: false
-date: 2019-08-16
+date: 2019-08-12
 tags:
 - 黑客松
 - 导师
@@ -12,7 +12,7 @@ keywords:
 - cd
 - hackathon
 - 导师
-poster: "./2019-08-16-tutor-recruitment/tutor.png"
+poster: "./2019-08-12-tutor-recruitment/tutor.png"
 ---
 
 ![tutor](tutor.png)
